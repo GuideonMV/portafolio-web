@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Esta configuracion se usa al inicio de todos los css  */
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+/* se pone un "." para inicializar una clase */
+.contenedor {
+    display: flex; /* hace que el contenedor se vuelva flexible, esto para que todo lo que tenga adentro se pueda alinear facilmente */
+    justify-content: center; /* centra los elementos horizontalmente */
+    /* centra los elementos verticalmente */
+    background-color: aqua;
+    padding: 20px;
+    margin: 0 auto;
+    width: fit-content;
+    
+}
+/* Para inicializar un id se utillza "#" */
+#img1{
+    width: 1000px;
+    height: auto;
+}
+
+
+
+
