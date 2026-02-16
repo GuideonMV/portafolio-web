@@ -1,0 +1,163 @@
+/* Configuracion global css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: rgb(120, 226, 159);
+    font-size: 30px;
+    height: 90px;
+    
+}
+body{
+    background-color: rgb(33, 33, 33);
+}
+main h1{
+    color: white;
+    text-align: center;
+    /* Para que el texto no quede pegado al header */
+    margin: 20px;
+}
+nav ul{
+    display: flex; /* Hace que los elementos se acomoden de forma horizontal --- */
+    justify-content: center; /* Los muevo al medio */
+    list-style: none; /* Quito el punto de la etiqueta li */
+    font-size: 20px;
+    gap: 40px; /* Agregamos espacio entre cada elemento */
+    width: 100%; 
+}
+nav{
+    background-color: rgb(46, 52, 52);
+}
+nav a{
+    display: block; /* Se usa para que ocupe todo el espacio y el hover no se ponga unicamente en el texto */
+    text-decoration: none; /* Quita cualquier decoracion que traiga el texto por defecto, como un subrayado  */
+    color: rgb(120, 226, 159);
+    padding: 10px 20px; /* Con esto hacemos que el hover cubra todo el cuadro */
+    transition: 0.2s; /* Hacemos que el hover se muestre tras 0,2s de pasar el mouse, un efecto bonito */
+}
+nav a:hover{
+    background-color: rgb(33, 34, 34);
+}
+.container{
+    display: flex; /* Volvemos el contenido flexible para asi poder mover la imagen */
+    justify-content: center; /* Ponemos la imagen en el medio */
+    margin: 30px;
+}
+.container img{
+    border-radius: 8px; /* Ponemos los bordes redondeados */
+}
+#catalogo{
+    display: grid; /* Hace que el contenedor se convierta en una cuatricula o estante */
+    grid-template-columns: 1fr 1fr; /* Divide el espacio total en 2 columnas de igual tamaño */
+    gap: 20px;/* Crea un espacio entre las dos columnas para que no esten juntas */
+    margin: 40px auto;
+    justify-items: center;
+    max-width: 1000px;
+    padding: 20px;
+}
+.juegos img{
+    width: 100%; /* Hace que la imagen mida el 100% del ancho de su respectivo contenerdor */
+    max-width: 350px;
+    height: 350px;
+    border-radius: 8px; /* Redondea las esquinas */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
+    
+    
+}
+.juegos{
+    background-color: rgb(120, 226, 159);
+    max-width: 450px; 
+    width: 100%;
+    padding: 30px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.juegos h3{
+    text-align: center;
+    margin: 10px;
+}
+.precio{
+    text-align: center;
+    font-weight: bold; /* Letra en negrito */
+    margin: 10px;
+}
+.juegos:hover{
+    background-color: rgb(77, 150, 104);
+}
+footer{
+    background-color: rgb(46, 52, 52);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+footer h3{
+    font-size: 30px;
+    color: white;
+}
+.contacto{
+    display: flex;
+    /* Agrupa el contenido en columnas, tira el contenido hacia abajo */
+    flex-direction: column;
+    margin: 0;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.informacion{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgb(120, 226, 159);
+    /* El largo se ajusta segun el contenido que haya */
+    width: fit-content;
+    padding: 20px;
+    border-radius: 8px;
+
+    
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+}
+.formulario h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; 
+}
+.formulario input{
+    padding: 10px;
+    width: 100%;
+    
+}
+.formulario textarea {
+    padding: 10px;
+    height: 140px;
+    width: 100%;
+    resize: vertical;
+}
+.formulario button{
+    padding: 10px;
+}
+
